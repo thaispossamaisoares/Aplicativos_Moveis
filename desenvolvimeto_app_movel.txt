@@ -1,0 +1,30 @@
+android studio
+new project
+
+Sorte do dia
+br.com.up.sortedodia
+pasta C:thais\...
+Java
+Versão 8
+
+obs:
+nao usar a baixa da versão 7	
+
+
+
+
+arquivo Gradle Scripts
+arquiivobuild.gradle
+
+alterar
+minSdk 26
+sync now 
+
+
+---------------------*-------*--*--*-*-*-----------*-*-*-------------
+Como salvar o 'app'
+build
+	build bundle(s) /APK
+		output 
+			debug
+	
