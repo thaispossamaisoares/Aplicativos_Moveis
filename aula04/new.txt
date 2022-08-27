@@ -1,0 +1,44 @@
+--------------aula 04     26/08/2022 --------------------
+no arquivo activity_add_gift
+
+***ADICIONAR***
+
+3 textInputLayout
+1 botton
+
+***MUDAR OS ID'S***
+
+textInputLayout:
+input_layout_name
+	input_text_name
+
+input_layout_description
+	input_text_description
+	
+input_layout_present
+	input_text_present
+	
+button_add_gift
+
+
+***ALTERAR OS HINT*** 
+vai no COMMON ATTRIBUTES
+
+Name
+Present
+Description
+
+Add Present 
+
+***Arquivo Models***
+java
+   br.com.up.listadepresentes
+    >new 
+		> package
+			>*****.models
+		
+Models
+	>new
+		>Kotrlin class/fille
+			>Date Class
+				>Gift
