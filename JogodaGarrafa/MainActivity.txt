@@ -1,0 +1,44 @@
+package br.com.up.jogodagarrafa;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
+
+import java.util.Random;
+
+public class MainActivity extends AppCompatActivity {
+
+    private ImageView garrafa;
+    private Random random = new Random();
+    private int ultimaDirecao;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        garrafa = findViewById(R.id.garrafa);
+        garrafa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int bound;
+                int i = 1800;
+
+                int novaDirector = random.nextInt(i);
+                float exonX = garrafa.getWidth() / 2;
+                float exonY = garrafa.getWidth() / 2;
+
+                Animation Virar = new RotateAnimation(ultimaDirecao,novaDirector,exonX,exonY);
+                Virar.setDuration(2500);
+                Virar.setFillAfter(true);
+
+                ultimaDirecao = novaDirector;
+                garrafa.startAnimation(Virar);
+            }
+        });
+    }
+}
